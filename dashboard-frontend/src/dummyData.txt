@@ -1,0 +1,39 @@
+First thing we should know is that this project is related to the food delivery app, which works in desktop as well as mobile, so we should make every component very responsive accordingly.
+
+Please make the Navbar buttons responsive
+In the settings, we can add update userInfo like name, email, mobileNumber
+We can create user card component to show the User Info
+Add any dummy notifications in the notifications list
+Add dummy mail from any dummy user in the mail list
+Currently notifications and mails same for all logged in users
+Use orders info from database by the filter of user
+
+Make the search functionality working to search for orders using order number and give the order number suggestions as the user start typing the order number
+
+Here Home icon redirects to the dashboard page
+Analytics icon redirects to the orders page
+Tasks icon redirects to the custom taskboard page where the user can add the list of tasks and mark them complete
+Wallet icon redirects to the Wallet page where use can see the amout or orders devivered by using orderDeliveredOnDate filter
+
+Bag button redirects to the page to add orders or update the order status
+We should add orders data in the dataBase
+Order data includes the information: userId, userName, customerName, customerImage, orderNumber, orderReceiveDate, orderDeliveredOnDate, deliveryStatus:[PENDING, CANCELLED, DELIVERED], actualAmount, soldAtAmount, dishName, instructions
+When customerImage is not provided, use the customerName initial as the image in the ordersList view in the dashboard and Analytics page
+Add the icons from bootstrap for Home, Analytics, Tasks, Wallet and Bag
+Try to use the same icons as per shown in the image
+
+Develop the user feature to login or signup
+Add logout button in Sidebar at the bottom
+Also add the login or signup page and save all the user info in the database
+While signup ask for: userName, email, mobileNumber, password, image and signup Button
+Login page should contain userName, password and logIn Button
+User can login by using any of the following combinations:
+[userName, password] or
+[email, password] or
+[mobileNumber, password] or
+[name, password]
+
+We should improve the comments section
+In the comments section, the ratings should be responsive 
+And should be shown comment message under the start ratings
+

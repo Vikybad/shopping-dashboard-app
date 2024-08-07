@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "workbench.settings.openDefaultSettings": true
+}
