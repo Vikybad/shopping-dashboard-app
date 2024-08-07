@@ -43,7 +43,7 @@ const Sidebar = () => {
     >
       <Box sx={{ overflow: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', pt: 2 }}>
         <Box sx={{ mb: 4 }}>
-          <img src="/logo.png" alt="Logo" width="40" height="40" />
+          <img src="images/logo.png" alt="Logo" width="40" height="40" />
         </Box>
 
         <List>
