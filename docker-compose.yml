@@ -1,0 +1,43 @@
+
+services:
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - shopping-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: dashboard-backend/Dockerfile
+    container_name: shopping-backend
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_URI: ${MONGO_URI_PROD}
+      JWT_SECRET: ${JWT_SECRET}
+    networks:
+      - shopping-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: dashboard-frontend/Dockerfile
+    container_name: shopping-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - shopping-network
+
+volumes:
+  mongodb-data:
+
+
+networks:
+  shopping-network:
+    driver: bridge
